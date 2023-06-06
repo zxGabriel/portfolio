@@ -135,10 +135,11 @@
         overflow-x: hidden;
     }
 
-    .info_header{
-        width: 100%;
-        
+    .info_header {
+        width: 99%;
+
     }
+
 
     .info_btn{
         padding: 0.8em;
