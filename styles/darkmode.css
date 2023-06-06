@@ -1,0 +1,25 @@
+.dark_mode{
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 95%;
+    margin-top: -3%;
+}
+
+
+.dark_mode_btn{
+    display: block;
+    font-size: 200%;
+    color: var(--black1);
+    cursor: pointer;
+    transition: color 1s;
+}
+
+@media (max-width: 1200px){ 
+    .dark_mode{
+        position: absolute;
+        top: 1vh;
+        margin-top: auto;
+        margin-left: 85vw;
+    }
+}

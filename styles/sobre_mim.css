@@ -1,0 +1,27 @@
+.sobre_mim{
+    display: block;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.sobre_mim_titulo{
+    color: var(--black1);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: color 1s;
+}
+
+.sobre_mim_texto{
+    color: var(--black1);
+    font-family: var(--font-action);
+    transition: color 1s;
+}
+
+@media (max-width: 1200px){
+    .sobre_mim_texto{
+        text-align: center;
+    }
+}

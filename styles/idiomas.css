@@ -1,0 +1,31 @@
+.container_idiomas{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+    
+}
+.idioma{
+    font-size: 200%;
+    border: transparent;
+    cursor: pointer;
+    opacity: 50%;
+    background: var(--white1);
+    transition: background 1s;
+}
+
+.idioma:hover{
+    opacity: 100%;
+}
+
+@media (max-width: 1200px) {
+    .container_idiomas{
+        position: absolute;
+        top: 2vh;
+        margin-left: 10px;
+        gap: 10px
+    }
+    .idioma{
+        font-size: 170%;
+        opacity: 100%;
+    }
+}

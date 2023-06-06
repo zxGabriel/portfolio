@@ -1,0 +1,136 @@
+.competencias_progressbar{
+    display: none;
+}
+
+.progressbar_titulo{
+    color: var(--black1);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.progressbar_container h2{
+    text-align: left;
+    color: var(--black1);
+    font-family: var(--font-action);
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.progressbar{
+    margin-left: 0.1em;
+    background: var(--white1);
+    width: 90%;
+    height: 15px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.progressbar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progressbar div span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    float: right;
+    margin-top: -7px;
+    margin-right: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   transition: 1s;
+}
+
+.html{
+    background: var(--yellow3);
+    animation: html 1s linear forwards;
+}
+
+.html span{
+    border: 2px solid var(--yellow3);
+    background: var(--yellow3);
+}
+
+.css{
+    background: #0098db;
+    animation: css 1s linear forwards;
+}
+
+.css span{
+    border: 2px solid #0098db;
+    background: #0098db;
+}
+
+.javascript{
+    background: var(--yellow2);
+    animation: javascript 1s linear forwards;
+}
+
+.javascript span{
+    border: 2px solid var(--yellow2);
+    background: var(--yellow2);
+}
+
+.bootstrap{
+    background:#aa11bb;
+    animation:  bootstrap 1s linear forwards;
+}
+
+.bootstrap span{
+    border: 2px solid#aa11bb;
+    background:#aa11bb;
+}
+
+.react{
+    background: #1e579c;
+    animation: react 1s linear forwards;
+}
+
+.react span{
+    border: 2px solid #1e579c;
+    background: #1e579c;
+}
+
+@keyframes html{
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css{
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes javascript{
+    100%{
+        width: 85%;
+    }
+}
+
+@keyframes bootstrap{
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes react{
+    100%{
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px){
+    .progressbar_container h2{
+        margin-left: 0.5em;
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+}

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+:root {
+    --font-primary: 'Crete Round', serif;
+    --font-action: 'PT Mono', monospace;
+
+    --yellow1: #ffbd20;
+    --yellow2: #ffa01b;
+    --yellow3: #e18434;
+    --white1: #f2eef1;
+    --white2: #e6e6ec;
+    --black1: #282d3c;
+    --black2: #1a1a24;
+
+}
+
+body{
+    background-color: var(--white1);
+    overflow-y: hidden;
+    transition: background-color 1s;
+}
+
+@media (max-width: 1200px){
+    body{
+        overflow-y: auto;
+    }
+}

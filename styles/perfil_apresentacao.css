@@ -1,0 +1,163 @@
+
+/* texto inicial */
+.apresentacao {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 10vh;
+}
+
+.apresentacao_texto {
+    color: var(--black1);
+    font-family: var(--font-primary);
+    font-size: 200%;
+    transition: color 1s;
+}
+
+.container_apresentacao {
+    width: 30%;
+}
+
+.container_texto {
+    margin-bottom: 30px;
+}
+
+/* Botões info */
+
+.info_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border: 1px solid var(--black1);
+    border-radius: 24px;
+    width: 100%;
+    transition: border 1s;
+}
+
+.container_info hr {
+    border: transparent;
+    height: 5px;
+    width: 85%;
+    border-radius: 24px;
+    background: linear-gradient(var(--yellow1),var(--yellow1));
+    transition: background 1s;
+}
+
+.info_btn {
+    color: var(--black1);
+    padding: 1em;
+    border-radius: 25px;
+    font-size: 90%;
+    font-family: var(--font-action);
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 50%;
+    transition: background-color 1s , color 1s;
+}
+
+.info_btn:hover{
+   opacity: 100%;
+}
+
+.info_btn.ativo,
+.info_btn:active{
+    background-color: var(--yellow1);
+    opacity: 100%;
+}
+
+/* redes sociais e foto */
+.container_perfil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+}
+
+.perfil_foto{
+    border: 2px solid var(--yellow1);
+    width: 50%;
+    border-radius: 100px 50px 100px 50px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: border 1s;
+}
+
+.perfil_redes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.perfil_titulo{
+    color: var(--black1);
+    font-family: var(--font-primary);
+    font-size: 200%;
+    font-weight: bold;
+    transition: color 1s;
+}
+
+.perfil_link_container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.perfil_link{
+    display: flex;
+    font-size: 200%;
+    color: var(--black1);
+    transition: opacity 1s, font-size 0.2s, color 1s;
+    opacity: 70%;
+    justify-content: space-around;
+}
+
+.perfil_link:hover{
+    font-size: 220%;
+    opacity: 100%;
+}
+
+@media (max-width: 1200px) {
+    .apresentacao{
+        margin-top: 5vh;
+        gap: 5%;
+        flex-direction: column-reverse;
+        height:auto;
+        text-align: center;
+    }
+    .apresentacao_texto{
+        font-size: 150%;
+        margin-left: 10px;
+    }
+    .container_apresentacao{
+        width: 100%;
+    }
+
+    .info_header{
+        width: fit-content;
+    }
+
+    .info_btn{
+        padding: 0.8em;
+        font-size: 75%;
+    }
+
+    .container_perfil{
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    .perfil_foto{
+        width: 40%;
+    }
+
+    .perfil_link{
+        opacity: 100%;
+    }
+    .perfil_link:hover{
+        font-size: 200%;
+    }
+    .container_info{
+        margin-bottom: 5em;
+    }
+}
