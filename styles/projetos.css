@@ -2,8 +2,7 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .projetos_titulo {
@@ -20,17 +19,16 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 80% 80%;
-    grid-template-rows: 70% 70%;
+    grid-template-rows:50% 50%;
     width: 50%;
     gap: 50px;
 }
 
 .projetos_lista_item {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-direction: column; 
-    border: 1px solid var(--black1);
+    text-align: center;
     opacity: 70%;
     transition: border 1s;
 }
@@ -39,31 +37,32 @@
     opacity: 100%;
 }
 
-.lista_img{
+.projetos_lista_link{
+    padding: 0.5em;
+    display: flex;
     text-align: center;
-    width: 100%; 
-    max-height: 100%;
-}
-
-.lista_link_header{
-    display: flex;
-    width: 100%;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-}
-
-.lista_link_footer{
-    display: flex;
-    border-top: 1px solid var(--black1);
-    width: 100%;
     justify-content: center;
-    align-items: center;
-    height: 40px;
     background-color: var(--yellow1);
-    color: var(--black1);
+    text-decoration: none;
     font-family: var(--font-action);
-    transition: 1s;
+    color: var(--black1);
+    border: 1px solid var(--black1);
+    width: 100%;
+    min-height: 50px;
+}
+
+.projetos_lista_continuacao{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 200%;
+}
+
+.projetos_lista_continuacao h2{
+    font-weight: bold;
+    font-family: var(--font-action);
+    color: var(--black1);
 }
 
 @media (max-width: 1200px){
@@ -73,6 +72,7 @@
     }
 
     .projetos_lista {
+        margin-top: 1em;
         justify-content: center;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -80,9 +80,5 @@
         width: 80%;
         row-gap: 30px;
         column-gap: 10px;
-    }
-
-    .projetos_lista_item{
-        margin-bottom: auto;
     }
 }
